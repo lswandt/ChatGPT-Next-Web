@@ -172,11 +172,19 @@ export function SideBarHeader(props: {
     <Fragment>
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
+          小筑助手
           {title}
         </div>
-        <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>{logo}</div>
+        <div className={styles["sidebar-sub-title"]}>
+          only for vip，support gpt-4o
+        </div>
+        <div className={styles["sidebar-logo"] + " no-dark"}>
+          <ChatGptIcon />
+        </div>
       </div>
+      <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
+      <div className={styles["sidebar-logo"] + " no-dark"}>{logo}</div>
+
       {children}
     </Fragment>
   );
