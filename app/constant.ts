@@ -292,6 +292,7 @@ const openaiModels = [
   "dall-e-3",
   "o1-mini",
   "o1-preview",
+  "claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [
