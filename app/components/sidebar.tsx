@@ -167,7 +167,7 @@ export function SideBarHeader(props: {
   logo?: React.ReactNode;
   children?: React.ReactNode;
 }) {
-  const { title, subTitle, logo, children } = props;
+  const { title = "小助助手", subTitle = "all models", logo, children } = props;
   return (
     <Fragment>
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
