@@ -276,6 +276,7 @@ const openaiModels = [
   "gpt-4-turbo-2024-04-09",
   "gpt-4-1106-preview",
   "dall-e-3",
+  "proxy-claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [
