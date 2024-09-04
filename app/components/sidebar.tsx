@@ -167,17 +167,15 @@ export function SideBarHeader(props: {
   logo?: React.ReactNode;
   children?: React.ReactNode;
 }) {
-  const { title = "小助助手", subTitle = "all models", logo, children } = props;
+  const { title, subTitle, logo, children } = props;
   return (
     <Fragment>
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title-container"]}>
           <div className={styles["sidebar-title"]} data-tauri-drag-region>
-            {title}小助助手
+            {title}
           </div>
-          <div className={styles["sidebar-sub-title"]}>
-            {subTitle}all models
-          </div>
+          <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>{logo}</div>
       </div>
@@ -227,8 +225,8 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="NextChat"
-        subTitle="Build your own AI assistant."
+        title="程序小筑-智能助手"
+        subTitle="all models ,for vip"
         logo={<ChatGptIcon />}
       >
         <div className={styles["sidebar-header-bar"]}>
