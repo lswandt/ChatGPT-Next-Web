@@ -173,9 +173,11 @@ export function SideBarHeader(props: {
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title-container"]}>
           <div className={styles["sidebar-title"]} data-tauri-drag-region>
-            {title}
+            {title}小助助手
           </div>
-          <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
+          <div className={styles["sidebar-sub-title"]}>
+            {subTitle}all models
+          </div>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>{logo}</div>
       </div>
